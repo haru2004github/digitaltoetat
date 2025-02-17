@@ -147,13 +147,13 @@
     </style>
 </head>
 <body class="min-h-[300vh] poppins-regular">
-    <header class="flex justify-between items-center px-3 py-2 w-full shadow-xl border border-slate-300/20">
-        <div class="flex itmes-center text-lg text-blue-500 font-semibold items-center">
+    <header class="fixed top-0 left-0 w-full bg-slate-50 flex justify-between items-center px-3 py-2  shadow-xl border border-slate-300/20">
+        <a href="./index.html" class="flex itmes-center text-lg text-blue-500 font-semibold items-center">
             <img class="w-8" src="./dist/img/logo1.jpg" alt="">
             <span class="">
                 Digital Toe Tat
             </span>
-        </div>
+        </a>
         <!-- nav link start -->
         <div id="aside" class="fixed  border border-t-0 border-l-0 border-b-0 border-r-slate-400/60 md:static top-0 left-0 bg-white/60 md:bg-transparent md:border-none backdrop-blur-xl md:backdrop-blur-0 text-blue-800 w-48 h-screen md:h-auto z-50  duration-300 -translate-x-full md:translate-x-0">
 
@@ -190,17 +190,7 @@
                         </a>
                     </li>
 
-                    <li class="md:hidden">
-                        <!-- language changhe input start  -->
-                        <div class="mt-7 flex md:hidden justify-center items-center space-x-1 text-sm lg:text-base border border-blue-900  text-center py-2 md:py-0 px-3 rounded-xl shadow-md md:border-t-0 md:border-r-0 md:border-l-0 md:border-b-2 md:border-b-blue-950 md:hover:border-b-slate-100 duration-300 text-slate-9">
-                            <div class="w-6">
-                                <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" alt="US">
-                            </div>
-                            <span>English</span>
-                            <i class="fas fa-angle-down"></i>
-                        </div>
-                        <!-- language changhe input end -->
-                    </li>
+                
     
                 </ul>
             </div>
@@ -221,7 +211,7 @@
 
     </header>
 
-    <main class="w-full text-center">
+    <main class="w-full text-center mt-14">
         <div class="flex justify-center">
             <div class="flex justify-center w-48  py-10">
                 <img class="w-full" src="./dist/img/hero_image.png" alt="">
@@ -238,8 +228,8 @@
                 </span>
             </span><br>
             <div class="mt-3">
-                <span class="text-2xl relative md:block lg:inline max-w-md mx-auto ">
-                    <svg aria-hidden="true" viewBox="0 0 418 42" class="absolute top-2/3 left-0 h-[0.58em] w-full fill-blue-300/70" preserveAspectRatio="none">
+                <span style="z-index: -2;" class="text-2xl relative z-0 md:block lg:inline max-w-md mx-auto ">
+                    <svg aria-hidden="true" viewBox="0 0 418 42" class="absolute z-0 top-2/3 left-0 h-[0.58em] w-full fill-blue-300/70" preserveAspectRatio="none">
                         <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
                         </path>
                     </svg>
@@ -251,7 +241,7 @@
             </div>
         </div>
 
-        <p class="px-2 mt-8 text-[11px] leading-relaxed text-center poppins-regular">
+        <p class="px-2 mt-6 text-[12px] leading-relaxed text-center poppins-regular">
             ခုလို တိုးတက်လာတဲ့ ခေတ်မှာ နောက်ကျမကျန်ခဲ့ မလို့ Digital Skillsတွေက <br>
 
     လူတိုင်းလိုအပ်လာပါပြီ။ ဒါကြောင့် တကယ် အရေးပါတဲ့ Digital Skills တွေကို <br>
@@ -260,11 +250,145 @@
     စီစဉ်ပေးထားပါတယ်။ <br>
         </p>
 
-        <div class="flex justify-center  mt-10">
-            <a href="" class="bg-blue-500 text-white px-4 py-2 text-lg rounded-md shadow-xl flex items-center gap-x-2 hover:bg-blue-600 duration-300 hover:shadow-xl">
+        <div class="flex justify-center  mt-10 mb-20">
+            <a href="" class="bg-blue-500 text-white px-4 py-2 text-lg font-semibold rounded-md shadow-xl flex items-center gap-x-2 hover:bg-blue-600 duration-300 hover:shadow-xl">
                 <i class="fas fa-hand-pointer"></i>
                 Start Now!
             </a>
+        </div>
+
+        <div class="bg-[#3b7cd5] py-10">
+            <div class="flex justify-center ">
+                <div class="w-32">
+                    <img src="./dist/img/key.png" alt="">
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <p class="text-2xl leading-relaxed font-extrabold text-white ">
+                    ယနေ့ Digital ခေတ်မှာ <br>
+                    Digital Skills များ ရှိခြင်းသည်  <br>
+                    <span class="text-[#ffd700]">
+                        အောင်မြင်မှု၏ သော့ချက်
+                    </span>
+                     ဖြစ်သည်။ 
+                </p>
+
+                <p class="text-[#c9cdd1] text-sm mt-3 font-semibold">
+                    <span class="font-bold">
+                        Digital Toe Tet    
+                    </span> သည် သင့်အတွက် လက်တွေ့ <br>
+                    အသုံးချနိုင်တဲ့ <span class="font-bold">
+                        Digital Skills  
+                    </span> များကို သင်ကြားပေးမည်။
+                </p>
+                <div class="flex justify-center items-center gap-x-8">
+                    <div class="flex justify-center my-10">
+                        <div class="w-12 h-12 flex justify-center bg-white items-center rounded-full">
+                            <i class="fas fa-arrow-down text-[#3b7cd5] text-3xl font-bold"></i>
+                        </div>
+                    </div>
+                    <div class="flex justify-center my-10">
+                        <div class="w-12 h-12 flex justify-center bg-white items-center rounded-full">
+                            <i class="fas fa-arrow-down text-[#3b7cd5] text-3xl font-bold"></i>
+                        </div>
+                    </div>
+                    <div class="flex justify-center my-10">
+                        <div class="w-12 h-12 flex justify-center bg-white items-center rounded-full">
+                            <i class="fas fa-arrow-down text-[#3b7cd5] text-3xl font-bold"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mx-3 flex flex-col gap-y-5  ">
+
+
+                    <div class="bg-[#334c6d] py-3 px-2  rounded-lg shadow-xl">
+                        <div class="flex items-center gap-x-2">
+                            <div class="bg-white w-10 h-10 flex justify-center items-center rounded-lg text-[#3b7cd5]">
+                                <i class="fas fa-thumbs-up text-3xl"></i>
+                            </div>
+                            <div class="text-lg text-white font-bold">
+                                သင်ယူရန် လွယ်ကူခြင်း
+                            </div>
+                        </div>
+                        <p class="text-slate-100 mt-4 text-start text-[12px] leading-relaxed">
+                            <span class="font-semibold">
+                                Digital Toe Tet 
+                            </span>
+                            <span>
+                                သည် အခြေခံမရှိသူများအတွက်ပါ ရှင်းလင်းပြည့်စုံစွာ ဖော်ပြထားပြီး Step by Step သင်ပေးသည့် အဆင့်မြင့်သင်တန်းတစ်ခုဖြစ်ပါသည်။
+                            </span><br>
+                            <h1 class="mt-3 text-slate-100 text-[12px] text-start leading-relaxed">
+                                အခြေခံမရှိသူတွေလည်း တစ်ဆင့်ချင်း တိုးတက်နိုင်အောင် ဖန်တီးထားတဲ့ သင်ခန်းစာများ ပါဝင်ပါတယ်။ ရှင်းလင်းပြတ်သားပြီး လွယ်ကူစွာ နားလည်အောင် သင်ကြားသွားမှာဖြစ်တဲ့အတွက် Digital Skills လေ့လာချင်သူများ အတွက် အထူးသင့်လျော် ပါသည်။
+                            </h1>
+                        </p>
+                    </div>
+
+                    <div class="bg-[#334c6d] py-3 px-2  rounded-lg shadow-xl">
+                        <div class="flex items-center gap-x-2">
+                            <div class="bg-white w-10 h-10 flex justify-center items-center rounded-lg text-[#3b7cd5]">
+                                <i class="fas fa-award text-3xl"></i>
+                            </div>
+                            <div class="text-lg text-white font-bold">
+                                Certificate/ဆုလက်မှတ် ပေးခြင်း
+                            </div>
+                        </div>
+                        <p class="text-slate-100 mt-4 text-start text-[12px] leading-relaxed">
+                            <span class="font-semibold">
+                                Digital Toe Tet 
+                            </span>
+                            <span>
+                                တွင် သင်တန်းတစ်ခုပြီးတိုင်း Test အသေးလေးဖြေရမှာဖြစ်ပြီး အောင်မြင်ပါက ဆုလက်မှတ်ထုတ်ပေးမှာပါ။
+                            </span><br>
+                            <h1 class="mt-3 text-slate-100 text-[12px] text-start leading-relaxed">
+                                <span class="font-semibold">
+                                    Certificate
+                                </span> / အသိအမှတ်ပြု ဆုလက်မှတ်များသည် အရည်အချင်းနှင့် အသိပညာကို တရားဝင်အသိအမှတ်ပြုခြင်းဖြစ်ပြီး၊ နယ်ပယ်အသီးသီးတွင် ယုံကြည်စိတ်ချရမှုနှင့် အရည်အချင်းပြည့်မီမှုကို ပေါ်လွင်စေပါသည်။ ၎င်းတို့သည် အလုပ်အကိုင်အခွင့်အလမ်းများနှင့် သက်မွေးဝမ်းကြောင်းတိုးတက်မှုကို မြှင့်တင်ပေးပါသည်။
+                            </h1>
+                        </p>
+                    </div>
+
+                    <div class="bg-[#334c6d] py-3 px-2  rounded-lg shadow-xl">
+                        <div class="flex items-center gap-x-2">
+                            <div class="bg-white w-10 h-10 flex justify-center items-center rounded-lg text-[#3b7cd5]">
+                                <i class="fas fa-graduation-cap text-2xl"></i>
+                            </div>
+                            <div class="text-lg text-white font-bold">
+                                စနစ်တကျ သင်ကြားပေးခြင်း
+                            </div>
+                        </div>
+                        <p class="text-slate-100 mt-4 text-start text-[12px] leading-relaxed">
+                            <span>
+                                သင်တန်းသည် 
+                                <span class="font-semibold">
+                                    Internet
+                                </span>
+                                ချိတ်ဆက်ထားမယ်ဆိုရင် ဘယ်နေရာမှာမဆို, ဘယ်အချိန်မှာမဆို သင်ယူနိုင်ပါတယ်။ 
+                            </span><br>
+                            <h1 class="mt-3 text-slate-100 text-[12px] text-start leading-relaxed">
+                                သင်တန်းအပ်ပြီးသည့် နေ့မှစ၍ သင်တန်းကြာချိန်အလိုက် နေ့စဉ် ည8နာရီ ရောက်တိုင်း သင်ခန်းစာ 
+                                <span class="font-semibold">
+                                    (Prerecorded Lessons)
+                                </span>များကို မိမိ၏ 
+                          
+                                <span class="font-semibold">
+                                    Private Account
+                                </span>
+                                 သို့ပို့ပေးမှာပါ။
+                            </h1>
+                            <h1 class="mt-3 text-slate-100 text-[12px] text-start leading-relaxed">
+                                သင်တန်း၏ သင်ခန်းစာများကိုလည်း တစ်သက်စာ 
+                                <span class="font-semibold">
+                                    Access ရမှာပါ။
+                                </span>
+                                
+                            </h1>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         
