@@ -147,7 +147,7 @@
     </style>
 </head>
 <body class="poppins-regular min-h-[300vh]">
-    <header class="fixed top-0 left-0 w-full bg-slate-50 flex justify-between items-center px-3 py-2  shadow-xl border border-slate-300/20">
+    <header class="fixed top-0 left-0 w-full bg-slate-50 flex justify-between items-center px-3 py-2  shadow-xl border border-slate-300/20 z-50">
         <a href="./index.html" class="flex itmes-center text-lg text-blue-500 font-semibold items-center">
             <img class="w-8" src="./dist/img/logo1.jpg" alt="">
             <span class="">
@@ -155,7 +155,7 @@
             </span>
         </a>
         <!-- nav link start -->
-        <div style="z-index: 100!important;" id="aside" class="fixed  border border-t-0 border-l-0 border-b-0 border-r-slate-400/60 md:static top-0 left-0 bg-white/60 md:bg-transparent md:border-none backdrop-blur-xl md:backdrop-blur-0 text-blue-800 w-48 h-screen md:h-auto z-50  duration-300 -translate-x-full md:translate-x-0">
+        <div style="z-index:100!important;" id="aside" class="fixed  border border-t-0 border-l-0 border-b-0 border-r-slate-400/60 md:static top-0 left-0 bg-white/60 md:bg-transparent md:border-none backdrop-blur-xl md:backdrop-blur-0 text-blue-800 w-48 h-screen md:h-auto z-50  duration-300 -translate-x-full md:translate-x-0">
 
             <div class="realtive md:static flex justify-center items-center h-full md:h-auto">
 
@@ -204,9 +204,9 @@
             သင်တန်းများ
         </h1>
 
-        <div class=" mt-6 grid grid-cols-7 gap-x-2 bg-[#234676] rounded-xl w-full p-2">
+        <div class=" mt-6 grid grid-cols-7 gap-x-2 bg-sky-800 backdrop-blur-lg rounded-xl w-full p-2">
             <div class="col-span-3">
-                <img src="./dist/img/course.png" alt="">
+                <img class="rounded-lg" src="./dist/img/course.png" alt="">
             </div>
             <div class="col-span-4 ">
                 <h2 class="text-slate-100 text-[12px] font-semibold mb-2 mt-2">
@@ -214,14 +214,14 @@
                 </h2>
                 <div class="mt-3 text-[10px] flex items-center gap-x-1">
                     <div class=" w-6 h-6 flex justify-center items-center rounded-full shadow-lg bg-white">
-                        <i class="fas fa-video text-sm text-[#234676]"></i>
+                        <i class="fas fa-video text-sm text-teal-900"></i>
                     </div>
                     <div class="font-bold text-slate-100">
                         သင်ခန်းစာ 4ခု
                     </div>
                 </div>
 
-                <div class=" text-[10px] flex items-center gap-x-2 mt-2">
+                <div class=" text-[10px] flex items-center gap-x-1 mt-2">
                     <div class="  w-6 h-6 flex justify-center items-center rounded-full shadow-lg bg-white">
                         <i class="far fa-clock text-lg text-[#234676]"></i>
                     </div>
@@ -230,7 +230,7 @@
                     </div>
                 </div>
                 <div class="mt-4 mb-2">
-                    <a href="" class="bg-cyan-600 text-white rounded-lg shadow-lg text-xs px-3 py-2">
+                    <a href="" class="bg-sky-600 text-white rounded-lg shadow-lg text-[12px] px-3 py-2">
                         ပိုမိုလေ့လာရန် 
                         <i class="fas fa-arrow-right"></i>
                     </a>
@@ -238,11 +238,11 @@
             </div>
         </div>
 
-        <h3 class="text-center  mt-5 z-10 font-bold text-xl text-blue-500">
+        <h3 class="text-start  mt-5 z-10 font-bold text-xl text-sky-800">
             Upcoming Course
         </h3>
 
-        <div class=" mt-6 grid grid-cols-7 gap-x-2 bg-[#234676] rounded-xl w-full p-2">
+        <div class=" mt-6 grid grid-cols-7 gap-x-2 bg-indigo-700 backdrop-blur-lg rounded-xl w-full p-2">
             <div class="col-span-3">
                 <img class="rounded-md" src="https://i.pinimg.com/736x/80/18/5e/80185e502e3da78150e3527f2cf012a2.jpg" alt="">
             </div>
@@ -259,7 +259,7 @@
                     </div>
                 </div>
 
-                <div class=" text-[10px] flex items-center gap-x-2 mt-2">
+                <div class=" text-[10px] flex items-center gap-x-1 mt-2">
                     <div class=" w-6 h-6 flex justify-center items-center rounded-full shadow-lg bg-white">
                         <i class="far fa-clock text-lg text-[#234676]"></i>
                     </div>
@@ -268,7 +268,7 @@
                     </div>
                 </div>
                 <div class="mt-4 mb-2">
-                    <a href="" class="bg-cyan-600 text-white rounded-lg shadow-lg text-xs px-3 py-2">
+                    <a href="" class="bg-indigo-500 text-white rounded-lg shadow-lg text-[12px] px-3 py-2">
                         Coming Soon...
 
                     </a>
@@ -280,7 +280,7 @@
 
         </div>
 
-        <!-- <div class=" mt-6 gap-x-2 bg-[#234676] rounded-xl w-full p-2">
+        <!-- <div class=" mt-6 gap-x-2 bg-cyan-800 backdrop-blur-lg rounded-xl w-full p-2">
             <div class="col-span-3">
                 <img src="./dist/img/course.png" alt="">
             </div>
