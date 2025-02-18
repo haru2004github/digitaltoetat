@@ -231,13 +231,56 @@
                 </div>
                 <div class="mt-2">
                     <a href="" class="bg-cyan-600 text-white rounded-lg shadow-lg text-xs px-2 py-1">
-                        Enroll!
+                        ပိုမိုလေ့လာရန် 
+                        <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class=" mt-6 gap-x-2 bg-[#234676] rounded-xl w-full p-2">
+        <h3 class="text-center animate animate-pulse mt-5">
+            Comming Soon
+        </h3>
+
+        <div class=" mt-6 grid grid-cols-7 gap-x-2 bg-[#234676] rounded-xl w-full p-2">
+            <div class="col-span-3">
+                <img class="rounded-md" src="https://i.pinimg.com/736x/80/18/5e/80185e502e3da78150e3527f2cf012a2.jpg" alt="">
+            </div>
+            <div class="col-span-4 ">
+                <h2 class="text-slate-100 text-[12px] font-semibold mb-2 mt-2 h-2 bg-slate-300/30 rounded-xl">
+                    
+                </h2>
+                <div class="mt-2 text-[10px] flex items-center gap-x-1">
+                    <div class=" scale-75 w-8 h-8 flex justify-center items-center rounded-full shadow-lg bg-white">
+                        <i class="fas fa-video text-lg text-[#234676]"></i>
+                    </div>
+                    <div class="font-bold text-slate-100 h-2 bg-slate-300/30 rounded-xl w-32">
+                  
+                    </div>
+                </div>
+
+                <div class=" text-[10px] flex items-center gap-x-2">
+                    <div class=" scale-75 w-8 h-8 flex justify-center items-center rounded-full shadow-lg bg-white">
+                        <i class="far fa-clock text-2xl text-[#234676]"></i>
+                    </div>
+                    <div class="font-bold text-slate-100  h-2 bg-slate-300/30 rounded-xl w-40">
+                     
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <a href="" class="bg-cyan-600 text-white rounded-lg shadow-lg text-xs px-2 py-1">
+                        ပိုမိုလေ့လာရန် 
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+
+        <!-- <div class=" mt-6 gap-x-2 bg-[#234676] rounded-xl w-full p-2">
             <div class="col-span-3">
                 <img src="./dist/img/course.png" alt="">
             </div>
@@ -273,9 +316,28 @@
                 </div>
                 
             </div>
-        </div>
+        </div> -->
     </main>
 
 
 </body>
+<script>
+    let navIcon = document.querySelector(".navIcon")
+let one = document.querySelector(".one")
+let two = document.querySelector(".two")
+let three = document.querySelector(".three")
+let aside = document.querySelector("#aside");
+
+navIcon.addEventListener('click' ,()=>{
+    one.classList.toggle('active')
+    two.classList.toggle('active')
+    three.classList.toggle('active')
+
+    aside.classList.toggle("-translate-x-full")
+})
+
+
+
+
+</script>
 </html>
