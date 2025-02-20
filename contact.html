@@ -147,17 +147,17 @@
     </style>
 </head>
 <body>
-    <header class="fixed top-0 left-0 w-full bg-slate-50 flex justify-between items-center px-3 py-2  shadow-xl border border-slate-300/20">
+    <header style="z-index: 10;" class="fixed top-0 left-0 w-full bg-slate-50 flex justify-between items-center px-3 py-2  shadow-xl border border-slate-300/20">
         <a href="./index.html" class="flex itmes-center text-lg text-blue-500 font-semibold items-center">
             <img class="w-8" src="./dist/img/logo1.jpg" alt="">
-            <span class="">
+            <span class="font-bold">
                 Digital Toe Tat
             </span>
         </a>
         <!-- nav link start -->
-        <div id="aside" class="fixed  border border-t-0 border-l-0 border-b-0 border-r-slate-400/60 md:static top-0 left-0 bg-white/60 md:bg-transparent md:border-none backdrop-blur-xl md:backdrop-blur-0 text-blue-800 w-48 h-screen md:h-auto z-50  duration-300 -translate-x-full md:translate-x-0">
+        <div style="z-index:100!important;" id="aside" class="fixed  border border-t-0 border-l-0 border-b-0 border-r-slate-400/60 md:static top-0 left-0 bg-white/60 md:bg-transparent md:border-none backdrop-blur-xl md:backdrop-blur-0 text-blue-800 w-48 h-screen md:h-auto z-50  duration-300 -translate-x-full md:translate-x-0">
 
-            <div class="realtive md:static flex justify-center items-center h-full md:h-auto">
+            <div class="z-10 realtive md:static flex justify-center items-center h-full md:h-auto">
 
                 <ul class="flex flex-col md:flex-row gap-y-4 md:gap-y-0 items-center md:space-x-8 text-base ">
                     <li class="scale-90 md:scale-100 text-sm lg:text-base bg-blue-500 md:bg-transparent border-blue-950 text-white w-28 text-center py-2 md:py-0 rounded-xl md:rounded-none md:shadow-none md:text-white shadow-md md:w-full md:border-t-0 md:border-r-0 md:border-l-0 md:border-b-2 md:border-b-slate-100 duration-300 text-nowrap">
@@ -199,11 +199,11 @@
 
     </header>
 
-    <main class="flex justify-center items-center py-32 px-10">
-        <div class="bg-sky-700 rounded-xl shadow-xl drop-shadow-lg ">
+    <main class="flex justify-center items-center py-32 px-10 " >
+        <div style="z-index: 0!important;" class="bg-sky-700 rounded-xl shadow-xl drop-shadow-lg p-5 px-0">
             <div class="p-3 px-4 flex gap-x-3 items-center">
-                <a href="" class="w-14 h-14 bg-blue-500 flex justify-center items-center rounded-full  ">
-                    <i class="fab fa-facebook-f text-white text-3xl"></i>
+                <a href="" class="cursor-pointer w-14 h-14 bg-blue-500 flex justify-center items-end rounded-full  ">
+                    <i class="fab fa-facebook-f text-white text-4xl"></i>
                 </a>
 
                 <a href class="font-bold text-xl text-white">
@@ -212,11 +212,11 @@
             </div>
 
             <div class="mt-5 p-3 px-4 flex gap-x-3 items-center">
-                <a href="https://www.tiktok.com/@digitaltoetet?_t=ZS-8u1SoCL9jgf&_r=1" class="w-14 h-14 bg-slate-950 flex justify-center items-center rounded-full  ">
+                <a href="https://www.tiktok.com/@digitaltoetet?_t=ZS-8u1SoCL9jgf&_r=1" class="cursor-pointer w-14 h-14 bg-slate-950 flex justify-center items-center rounded-full  ">
                     <i class="fab fa-tiktok text-white text-3xl"></i>
                 </a>
 
-                <a href class="font-bold text-xl text-white">
+                <a href="https://www.tiktok.com/@digitaltoetet?_t=ZS-8u1SoCL9jgf&_r=1" class="font-bold text-xl text-white">
                     @digitaltoetet
                 </a>
             </div>
@@ -233,4 +233,23 @@
         </div>
     </main>
 </body>
+<script>
+    let navIcon = document.querySelector(".navIcon")
+let one = document.querySelector(".one")
+let two = document.querySelector(".two")
+let three = document.querySelector(".three")
+let aside = document.querySelector("#aside");
+
+navIcon.addEventListener('click' ,()=>{
+    one.classList.toggle('active')
+    two.classList.toggle('active')
+    three.classList.toggle('active')
+
+    aside.classList.toggle("-translate-x-full")
+})
+
+
+
+
+</script>
 </html>
