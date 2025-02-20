@@ -584,6 +584,9 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-2 {
+    top: calc(var(--spacing) * 2);
+  }
   .top-2\/3 {
     top: calc(2/3 * 100%);
   }
@@ -895,6 +898,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1621,6 +1627,9 @@
   .border-slate-300\/20 {
     border-color: color-mix(in oklab, var(--color-slate-300) 20%, transparent);
   }
+  .border-r-slate-400 {
+    border-right-color: var(--color-slate-400);
+  }
   .border-r-slate-400\/60 {
     border-right-color: color-mix(in oklab, var(--color-slate-400) 60%, transparent);
   }
@@ -1630,14 +1639,14 @@
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
   }
+  .bg-\[\#3b7cd5\] {
+    background-color: #3b7cd5;
+  }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
   }
   .bg-\[\#334c6d\] {
     background-color: #334c6d;
-  }
-  .bg-\[\#3b7cd5\] {
-    background-color: #3b7cd5;
   }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
@@ -1683,6 +1692,9 @@
   }
   .bg-slate-100 {
     background-color: var(--color-slate-100);
+  }
+  .bg-slate-300 {
+    background-color: var(--color-slate-300);
   }
   .bg-slate-300\/30 {
     background-color: color-mix(in oklab, var(--color-slate-300) 30%, transparent);
@@ -1814,6 +1826,9 @@
   .bg-origin-padding {
     background-origin: padding-box;
   }
+  .fill-blue-300 {
+    fill: var(--color-blue-300);
+  }
   .fill-blue-300\/70 {
     fill: color-mix(in oklab, var(--color-blue-300) 70%, transparent);
   }
@@ -1904,6 +1919,9 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
+  }
   .py-32 {
     padding-block: calc(var(--spacing) * 32);
   }
@@ -1912,6 +1930,9 @@
   }
   .pb-20 {
     padding-bottom: calc(var(--spacing) * 20);
+  }
+  .pb-30 {
+    padding-bottom: calc(var(--spacing) * 30);
   }
   .text-center {
     text-align: center;
@@ -2128,6 +2149,9 @@
   }
   .text-slate-700 {
     color: var(--color-slate-700);
+  }
+  .text-slate-800 {
+    color: var(--color-slate-800);
   }
   .text-slate-900 {
     color: var(--color-slate-900);
@@ -2375,10 +2399,6 @@
   }
   .drop-shadow-none {
     --tw-drop-shadow:  ;
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .drop-shadow-xl {
-    --tw-drop-shadow: drop-shadow(var(--drop-shadow-xl));
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .grayscale {
