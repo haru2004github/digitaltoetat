@@ -238,22 +238,28 @@
   </footer>
 </body>
 <script>
-    let navIcon = document.querySelector(".navIcon")
-let one = document.querySelector(".one")
-let two = document.querySelector(".two")
-let three = document.querySelector(".three")
-let aside = document.querySelector("#aside");
+  // toggle animation start 
+  let navIcon = document.querySelector(".navIcon")
+  let one = document.querySelector(".one")
+  let two = document.querySelector(".two")
+  let three = document.querySelector(".three")
+  let aside = document.querySelector("#aside");
 
-navIcon.addEventListener('click' ,()=>{
-    one.classList.toggle('active')
-    two.classList.toggle('active')
-    three.classList.toggle('active')
+  navIcon.addEventListener('click' ,()=>{
+      one.classList.toggle('active')
+      two.classList.toggle('active')
+      three.classList.toggle('active')
 
-    aside.classList.toggle("-translate-x-full")
-})
+      aside.classList.toggle("-translate-x-full")
+  })
+  // toggle animation start 
 
-
-
-
+// Loading animation 
+  window.addEventListener('load', ()=>{
+      document.querySelector('.loading').style.transition='2s'
+      document.querySelector('.loading').style.opacity='0'
+      document.querySelector('.loading').style.zIndex='-2'
+  
+  })
 </script>
 </html>

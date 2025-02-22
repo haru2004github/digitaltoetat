@@ -204,7 +204,7 @@
 
     </style>
 </head>
-<body class="min-h-[300vh] poppins-regular">
+<body class=" flex flex-col justify-between poppins-regular">
     <header style="z-index: 10!important;" class="fixed top-0 left-0 w-full bg-slate-50 flex justify-between items-center px-3 py-2  shadow-xl border border-slate-300/20">
         <a href="./index.html" class="flex itmes-center text-lg text-blue-500 font-semibold items-center gap-x-1">
             <img class="w-8" src="./dist/img/logo1.jpg" alt="">
@@ -582,22 +582,28 @@
     </footer>
 </body>
 <script>
+    // toggle animation start 
     let navIcon = document.querySelector(".navIcon")
-let one = document.querySelector(".one")
-let two = document.querySelector(".two")
-let three = document.querySelector(".three")
-let aside = document.querySelector("#aside");
+    let one = document.querySelector(".one")
+    let two = document.querySelector(".two")
+    let three = document.querySelector(".three")
+    let aside = document.querySelector("#aside");
 
-navIcon.addEventListener('click' ,()=>{
-    one.classList.toggle('active')
-    two.classList.toggle('active')
-    three.classList.toggle('active')
+    navIcon.addEventListener('click' ,()=>{
+        one.classList.toggle('active')
+        two.classList.toggle('active')
+        three.classList.toggle('active')
 
-    aside.classList.toggle("-translate-x-full")
-})
+        aside.classList.toggle("-translate-x-full")
+    })
+    // toggle animation start 
 
-
-
-
+// Loading animation 
+    window.addEventListener('load', ()=>{
+        document.querySelector('.loading').style.transition='2s'
+        document.querySelector('.loading').style.opacity='0'
+        document.querySelector('.loading').style.zIndex='-2'
+    
+    })
 </script>
 </html>
